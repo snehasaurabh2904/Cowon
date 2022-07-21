@@ -1,0 +1,179 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Times New Roman", Times, serif; */
+  /* border: 2px solid red; */
+}
+body {
+  scroll-behavior: smooth;
+  /* height: 100vh; */
+}
+
+/* *******************Utiliy Classes******************* */
+
+.r1 {
+  border-radius: 0.4rem;
+}
+
+#upmov:hover {
+  transform: translatey(-10px);
+  /* transform: scale(1.1);
+  border: 3px solid #053fbd36;*/
+  transition: 0.4s ease-out;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.bg-blue {
+  background-color: #054377d6;
+}
+
+.text-blue {
+  color: rgb(68, 140, 248);
+}
+/* *******************preloader******************* */
+#preloader {
+  width: 100vw;
+  height: 100vh;
+  z-index: 100000;
+  position: fixed;
+  background: #000 url("../src/load.gif") no-repeat center;
+  z-index: 999;
+  display: grid;
+  place-items: center center;
+}
+
+.loading {
+  position: relative;
+  top: 0vh;
+  text-decoration: dotted;
+  font-size: xx-large;
+}
+/* *******************Navbar******************* */
+.fullnav {
+  position: sticky;
+  /* background-color: #000000; */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  max-width: 100vw;
+  /* box-shadow: 0px 0px 20px 5px #ff7704; */
+}
+
+#nav {
+  background-color: #fdfbfb41;
+}
+
+#nav.scrolled {
+  background-color: #000000;
+}
+
+#nav-logo {
+  height: 50px;
+  width: 50px;
+}
+
+.navlist {
+  display: flex;
+  justify-content: space-between;
+  /* font-size: x-large; */
+  /* min-width: 50vw; */
+  /* border: 2px solid greenyellow; */
+}
+
+.nav-ml {
+  margin-left: 50px;
+}
+
+nav + .mai {
+  display: none;
+}
+
+#navli {
+  color: rgba(255, 255, 255, 0.905);
+  font-size: large;
+}
+
+#navli:hover {
+  color: #ff821c;
+  transform: scale(1.2);
+}
+
+#openli {
+  color: #ff821c;
+  transform: scale(1.3);
+  font-size: large;
+  text-decoration: underline;
+}
+
+/* @media (min-width: 1155px) {
+  .navlist;
+} */
+
+@media (min-width: 780px) {
+  .navbar-toggler {
+    display: none;
+  }
+}
+@media (max-width: 780px) {
+  #m {
+    display: none;
+  }
+}
+
+/* *********************footer********************* */
+
+footer {
+  position: static;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footersec1 > div > h5 {
+  display: inline-block;
+  font-size: x-large;
+  border-bottom: 2px solid white;
+}
+.footersec1 > div > h5:hover {
+  color: steelblue;
+  border-color: steelblue;
+}
+.footersec1 > div > div,
+.footersec1 > div > div > a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footersec1 > div > div > a:hover,
+.footersec1 > div > div:hover {
+  /* text-decoration: underline; */
+  color: white;
+}
+
+.footersec1 > div > h5:hover ~ div,
+.footersec1 > div > h5:hover ~ div > a {
+  color: steelblue;
+}
+
+footer > div > h3:hover {
+  color: steelblue;
+}
+
+/* *********************background********************* */
+/* ------------- particles.js container -------------- */
+
+/* body > div > canvas { */
+/* visibility: hidden; */
+/* border: red solid 2px; */
+/* } */
+
+/* Changing Color Of Navigation on Scroll */
+.color__set {
+  background-color: #0a0a0a;
+}

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./src/w-covid.gif" type="image/x-icon">
+    <script defer src="./js/index.js"></script>
+    <!-- <script defer src="./js/script.js"></script> -->
+    <title>HOME</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body onload="preloader()">
+  <div id="preloader" style="z-index: 1000000;">
+    <h3 class="text-white loading animate__animated animate__pulse animate__infinite">Loading...</h3>
+  </div>
+
+  <script>
+    let preload = document.getElementById("preloader");
+      function preloader() {
+        preload.style.display = "none";
+      }
+      console.log("working");
+      function myFunction() {
+      var a = document.getElementById("mais");
+      console.log(a);
+      if (a.style.display == "none") {
+      // console.log(a.style.display);
+      a.style.display = "block";
+    // console.log(a.style.display);
+  } else {
+    a.style.display = "none";
+  }
+}
+  </script>
+
+  <!-- <header class="header__magic header__display sticky">
+
+    <a href="#" class="logo">C<span class="fas fa-virus"></span>vid-19</a>
+
+    <nav class="nav">
+      <ul class="nav__links">
+        <li class="nav__item">
+          <a class="nav__link nav__link--active" href="#section--1">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Stats</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Aimtertainment</a>
+        </li>
+        <li class="nav__item">
+            <a class="nav__link" href="#">Doctor</a>
+          </li>
+        <li class="nav__item">
+          <a class="nav__link nav__link--btn btn--show-modal" href="#"
+            >Book Your Slot</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </header> -->
+
+    <div class="slider">
+      <div class="fullnav rounded" style="z-index: 200;">
+        <nav class="navbar navbar-dark  p-2 px-4 mx-auto container-fluid" id="nav">
+          <div class="align-items-center">
+            <img src="./src/b-covid.gif" alt="logo" id="nav-logo">
+            <a href="./index.html" class="navbar-brand"><h2 class="align-bottom" style="display: inline-block;font-size: xx-large;">Covid-19 </h2></a>
+          </div>
+          <button class="navbar-toggler m-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="m">
+            <ul class="d-flex flex-row navbar-nav navlist" id="navl" style="display:none;">
+              <li class="nav-item"><a href="./index.html" class="nav-link " id="openli"><i class="fa fa-home" aria-hidden="true"></i>
+                Home</a></li>
+              <li class="nav-item nav-ml"><a href="./stats.html" class="nav-link " id="navli"><i class="fa fa-line-chart" aria-hidden="true"></i>
+                Stats</a></li>
+              <li class="nav-item nav-ml"><a href="./aimetertainment.html" class="nav-link " id="navli"><i class="fa fa-gamepad" aria-hidden="true"></i>
+                Aimertainment</a></li>
+              <li class="nav-item nav-ml"><a href="./doctors.html" class="nav-link " id="navli"><i class="fa fa-user-md" aria-hidden="true"></i>
+                Doctors</a></li>
+              <li class="nav-item nav-ml"><a href="./stats.html#statssec-3" class="nav-link " id="navli"><i class="fa fa-medkit" aria-hidden="true"></i>
+                Book slot</a></li>
+              
+            </ul>
+          </div>
+        </nav>
+        
+        <div class="mai" id="mais">
+        <div class="navbar p-2 mx-auto container-fluid onclicknav nav-item mt-1 center d-flex justify-content-center" id="nav">
+          <a href="./index.html" class="nav-link text-muted" id="openli"><h6 id="openli"><i class="fa fa-home" aria-hidden="true"></i>
+            Home</h6></a>
+        </div>
+        <div class="navbar p-2 mx-auto container-fluid onclicknav nav-item mt-1 center d-flex justify-content-center" id="nav">
+          <a href="./stats.html" class="nav-link text-muted" id="navli"><h6 id="navli"><i class="fa fa-line-chart" aria-hidden="true"></i>Stats</h6></a>
+        </div>
+        <div class="navbar p-2 mx-auto container-fluid onclicknav nav-item mt-1 center d-flex justify-content-center" id="nav">
+          <a href="./aimetertainment.html" class="nav-link text-muted" id="navli"><h6 id="navli"><i class="fa fa-gamepad" aria-hidden="true"></i>
+            Aimertainment</h6></a>
+        </div>
+        <div class="navbar p-2 mx-auto container-fluid onclicknav nav-item mt-1 center d-flex justify-content-center" id="nav">
+          <a href="./doctors.html" class="nav-link text-muted" id="navli"><h6 id="navli"><i class="fa fa-user-md" aria-hidden="true"></i>
+            Doctor</h6></a>
+        </div>
+        <div class="navbar p-2 mx-auto container-fluid onclicknav nav-item mt-1 center d-flex justify-content-center" id="nav">
+          <a href="./stats.html#statssec-3" class="nav-link text-muted" id="navli"><h6 id="navli"><i class="fa fa-medkit" aria-hidden="true" ></i>
+            Book Slot</h6></a>
+        </div>
+        </div>
+      </div> 
+      <!-- <header class="header">
+
+        <a href="#" class="logo">C<span class="fas fa-virus"></span>vid-19</a>
+    
+        <nav class="nav">
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a class="nav__link nav__link--active" href="#section--1">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#section--2">Stats</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#section--3">Aimtertainment</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#section--4">Doctor</a>
+              </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--btn btn--show-modal" href="#"
+                >Book Your Slot</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header> -->
+        
+        <div class="slide slide--1">
+
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay="" muted="" loop="">
+                  <source src="./video-homePage/mixkit-woman-wearing-a-face-mask-while-jogging-40146.mp4" type="video/mp4">
+                  <!-- <source src="https://cdn.videvo.net/videvo_files/video/free/2020-03/small_watermarked/200314%20-%20Work%20Life_Hand%20Sanitiser_04_4k_003_preview.webm" type="video/webm"> -->
+                  Your browser is not supported!
+                </video>
+            </div>
+
+            <div class="content">
+                <h1 class="content__head">We Will Win This</h1>
+                <h2 class="content__subhead">
+                  We Are All In This Together
+                </h2>
+            </div>
+
+        </div>
+
+        <div class="slide slide--2">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay="" muted="" loop="">
+                  <source src="./video-homePage/mixkit-flying-through-an-empty-city-26887-medium.mp4" type="video/mp4">
+                  <!-- <source src="https://cdn.videvo.net/videvo_files/video/free/2020-03/small_watermarked/200314%20-%20Work%20Life_Hand%20Sanitiser_04_4k_003_preview.webm" type="video/webm"> -->
+                  Your browser is not supported!
+                </video>
+            </div>
+
+            <div class="content">
+                <h1 class="content__head">Stay Home</h1>
+                <h2 class="content__subhead">
+                  Stay Safe
+                </h2>
+            </div>
+        </div>
+
+        <div class="slide slide--3">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay="" muted="" loop="">
+                  <source src="./video-homePage/mixkit-two-girls-with-masks-on-the-street-4769.mp4" type="video/mp4">
+                  <!-- <source src="https://cdn.videvo.net/videvo_files/video/free/2020-03/small_watermarked/200314%20-%20Work%20Life_Hand%20Sanitiser_04_4k_003_preview.webm" type="video/webm"> -->
+                  Your browser is not supported!
+                </video>
+            </div>
+
+            <div class="content">
+                <h1 class="content__head">Your Health Is In your Hands</h1>
+                <h2 class="content__subhead">
+                  Wear Mask 
+                </h2>
+            </div>
+        </div>
+
+        <div class="slide slide--4">
+            <div class="bg-video">
+              <video class="bg-video__content" autoplay="" muted="" loop="">
+                <source src="./video-homePage/mixkit-doctor-praying-before-surgery-high-view-33732-medium.mp4" type="video/mp4">
+                <!-- <source src="https://cdn.videvo.net/videvo_files/video/free/2020-03/small_watermarked/200314%20-%20Work%20Life_Hand%20Sanitiser_04_4k_003_preview.webm" type="video/webm"> -->
+                Your browser is not supported!
+              </video>
+            </div>
+
+            <div class="content">
+                <h1 class="content__head">Front Line Workers</h1>
+                <h2 class="content__subhead">
+                  Our source of life
+                </h2>
+            </div>
+        </div>
+
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+
+    </div>
+
+    <main>
+
+<!-- Precaution section Starting -->
+    <section class="section precautions bg-dark">
+
+      <h1 class="sec__heading">Precautions</h1>
+
+      <div class="precaution__points">
+        <div class="points point__1" data-key="1">
+          <img class="point__img" src="./images/pre-2.png" alt="image1pre">
+          <div class="point__txt">
+            <h1 class="point__txt--h1">Keep Distance</h1>
+            <p class="point__txt--short">Avoid Places That Are Crowded And Maintain Physical Distancing Of At Least 6 Feet.</p>
+          </div>
+        </div>
+        <div class="points point__2" data-key="2">
+          <div class="point__txt">
+            <h1 class="point__txt--h1">Wash Your Place</h1>
+            <p class="point__txt--short">Disinfect Frequently Used Items And Touched Surfaces Often.</p>
+          </div>
+          <img class="point__img" src="./images/pre-1.png" alt="image1pre">
+        </div>
+        <div class="points point__3" data-key="3">
+          <img class="point__img" src="./images/pre-3.png" alt="image1pre">
+          <div class="point__txt">
+            <h1 class="point__txt--h1">Don't Touch Face</h1>
+            <p class="point__txt--short">Kindly Avoid Touching Your Face, Especially Your Eyes, Nose And Mouth.</p>
+          </div>
+        </div>
+        <div class="points point__4" data-key="4">
+          <div class="point__txt">
+            <h1 class="point__txt--h1">Wash Your Hand</h1>
+            <p class="point__txt--short">Practise Good Hygiene: Cover Coughs And Sneezes, Don't Touch Your Face,And Wash Hands Often At Least 20 Seconds.</p>
+          </div>
+          <img class="point__img" src="./images/pre-4.png" alt="image1pre">
+        </div>
+        <div class="points point__5" data-key="5">
+          <img class="point__img" src="./images/pre-5.png" alt="image1pre">
+          <div class="point__txt">
+            <h1 class="point__txt--h1">Use Napkin</h1>
+            <p class="point__txt--short">Cough Or Sneeze Into A Tissue Or Your Elbow. Throw The Tissue Away And Wash Your Hands After.</p>
+          </div>          
+        </div>
+        <div class="points point--6" data-key="6">
+          <div class="point__txt">
+            <h1 class="point__txt--h1">Wear A Mask</h1>
+            <p class="point__txt--short">It Helps To Reduce The Risk Of Spread Both By Close Contact And By Airborne Transmission.</p>
+          </div>
+          <img class="point__img" src="./images/pre-6.png" alt="image1pre">
+        </div>
+      </div>
+
+    </section>
+<!-- Precaution section Starting -->
+
+
+<!-- Symptoms Section Starting-->
+<section class="section symptoms" id="symptoms">
+
+  <h1 class="norm__heading">covid-19 symptoms</h1>
+
+  <div class="column">
+
+      <div class="main-image">
+          <img src="./images/main-symp-img.png" alt="main-img">
+      </div>
+
+      <div class="box-container">
+
+        <div class="box">
+          <img src="./images/symp-a.png" alt="">
+          <h3>dry cough</h3>
+        </div>
+
+          <div class="box">
+              <img src="./images/symp-b.png" alt="">
+              <h3>Sore Throat</h3>
+          </div>
+
+          <div class="box">
+              <img src="./images/symp-c.png" alt="">
+              <h3>Cold</h3>
+          </div>
+
+          <div class="box">
+              <img src="./images/symp-d.png" alt="">
+              <h3>Fever</h3>
+          </div>
+
+          <div class="box">
+              <img src="./images/symp-e.png" alt="">
+              <h3>Headache</h3>
+          </div>
+
+          <div class="box">
+              <img src="./images/symp-f.png" alt="">
+              <h3>Vomiting</h3>
+          </div>
+
+      </div>
+
+  </div>
+
+</section>
+<!-- Symptoms Section Ending-->
+
+</main>
+
+
+<footer class="footer bg-black text-white">
+  <div class="footersec1 d-flex justify-content-around flex-wrap p-3">
+    <div class="m-3" style="width: 200px;">
+      <h5>About us</h5>
+      <div><p>This is a website, where people will Get updated info of covid 19 cases , consult doctor also can find solution of bordem in lockdown etc. For more details you can visit "MInistry of Health and Family Welfare Department" <a href="https://www.mohfw.gov.in/">Click&nbsp;here </a></p></div>
+    </div>
+    <div class="m-3" style="width: 200px;">
+      <h5>Team The_Errors</h5>
+      <div><a href="https://www.instagram.com/piyushgaur26/"> Piyush Gaur </a></div>
+      <div><a href="https://www.instagram.com/priyansh_kulshrestha/"> Priyansh </a></div>
+      <div><a href="https://www.instagram.com/radhikagarg704/"> Radhika Garg </a></div>
+      <div><a href="https://www.instagram.com/rajatgupta__25/"> Rajat Gupta </a></div>
+    </div>
+    <div class="m-3" style="width: 200px;">
+      <h5>Quick Links</h5>
+      <div><a href="./stats.html#statssec-3">Vaccination</a></div>
+      <div><a href="./doctors.html">Contact Doctors</a></div>
+      <div><a href="./form.html">book bed</a></div>
+      <div><a href="./aimetertainment.html">Aimertainment</a></div>
+      <div><a href="./index.html#symptoms">Symptoms</a></div>
+    </div>
+    <div class="m-3" style="width: 200px;">
+      <h5>Govt. Sites</h5>
+      <div><a href="https://www.mygov.in/covid-19/">mygov.in</a></div>
+      <div><a href="https://www.mohfw.gov.in/">mohfw.gov.in</a></div>
+      <div><a href="https://www.nhp.gov.in/">nhp.gov.in</a></div>
+      <div><a href="https://covid19.india.gov.in/">covid19.india.gov.in</a></div>
+      <div><a href="https://www.ayush.gov.in/">ayush.gov.in</a></div>
+    </div>
+  </div>
+  <div class="text-center text-white p-3 border-top ">
+        <h3>Created or Developed with <span class="fa fa-heart text-danger" aria-hidden="true"></span>
+          by The_Errors</h3>  
+  </div>
+</footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+/* *********************Stats page********************* */
+
+.mainstats-board {
+  background: #b8b8b836 url("../src/transparent\ bg.png") no-repeat center
+    center fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: space-around;
+  margin: auto;
+  width: 90%;
+}
+
+.mainstats-board:hover {
+  background: #bdbdbd83 url("../src/transparent\ bg.png") no-repeat center
+    center fixed;
+}
+
+.statscard {
+  background-color: #ff821ce6;
+  height: 250px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-self: baseline;
+  align-self: center;
+  transition: 0.4s ea se-out;
+}
+
+.statscard:hover {
+  box-shadow: 0 10px 10px -6px #0a0a0a;
+  background-color: #00000064;
+  color: #ff821c;
+  /* border: 2px solid red; */
+}
+
+.mainstats-board > a:hover,
+.mainstats-board > a,
+.mainstats-board > a:active,
+.mainstats-board > a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  max-width: 100vw;
+  height: auto;
+  /* background-color: aliceblue; */
+  color: black;
+}

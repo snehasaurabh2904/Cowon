@@ -1,0 +1,86 @@
+/* ********************section1******************** */
+canvas {
+  display: block;
+  /* vertical-align: bottom; */
+}
+#particles-js {
+  /* position: f; */
+  z-index: -1;
+  width: 100%;
+  height: 118vh;
+  /* height: inherit; */
+  background-color: rgb(26, 26, 26);
+  background-image: url("../src/question-mark.png");
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* **********************main-part**********************  */
+
+.maindiv-card {
+  background-color: #497aec41;
+  z-index: -2;
+  margin-top: -109vh;
+  padding: 1rem;
+  width: 70vw;
+  margin-left: 5rem;
+  box-shadow: 3px 5px 20px 10px rgba(70, 131, 180, 0.775);
+}
+
+.qheading {
+  text-shadow: 1px 2px 10px #f7041e;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.sheading {
+  text-shadow: 1px 2px #f7041e;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+/* ********************sec1-card******************** */
+.m-card {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(79, 139, 189);
+  flex-direction: column;
+}
+.card-link {
+  z-index: 90;
+}
+
+/* ********************Media-Queries******************** */
+@media (max-width: 1074px) {
+  #particles-js {
+    background-image: none;
+    height: 150vh;
+  }
+  .maindiv-card {
+    width: 90vw;
+    margin: auto;
+    margin-top: -140vh;
+  }
+}
+@media (max-width: 962px) {
+  #particles-js {
+    height: 190vh;
+  }
+  .maindiv-card {
+    margin-top: -180vh;
+  }
+}
+@media (max-width: 667px) {
+  #particles-js {
+    height: 280vh;
+  }
+  .maindiv-card {
+    margin-top: -275vh;
+  }
+}

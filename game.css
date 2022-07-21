@@ -1,0 +1,77 @@
+body {
+  background: linear-gradient(
+      135deg,
+      rgba(240, 77, 104, 0.1),
+      rgba(120, 120, 225, 0.1)
+    ),
+    url("../src/wepik-2021524-114832.png");
+  display: grid;
+  place-content: center;
+  place-items: center;
+  /* height: 100vh; */
+  min-height: 100vh;
+}
+.backg {
+  /*background: linear-gradient(
+      135deg,
+      rgba(240, 77, 104, 0.193),
+      rgba(120, 120, 225, 0.2)
+    ),
+    url("../src/wepik-2021524-114832.png"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  /* height: 100vh; */
+  height: auto;
+
+  display: grid;
+  place-content: center center;
+  /* border: 2px solid salmon; */
+}
+
+.mainbody {
+  background-color: #204cb16b;
+  /* padding: ; */
+  /* box-shadow: 3px 5px 20px 10px rgb(226, 111, 111); */
+  width: 95vw;
+
+  /* min-height: 80vh; */
+  border: 3px solid rgb(235, 101, 101);
+}
+
+.bordercard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  /* width: 90vw; */
+}
+
+.card {
+  text-decoration: none;
+  width: 300px;
+  /* height: 30vh; */
+  background-color: rgb(17, 17, 17);
+  /* padd; */
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+
+.cardimg {
+  /* width: 80%; */
+  margin-bottom: 5px;
+  width: 250px;
+  height: 250px;
+  align-self: center;
+  justify-self: center;
+  box-shadow: 1px 3px 10px 1px rgb(58, 112, 211);
+}
+
+.hcard {
+  color: slateblue;
+  text-shadow: 1px 1px indianred;
+  text-decoration: none;
+}
